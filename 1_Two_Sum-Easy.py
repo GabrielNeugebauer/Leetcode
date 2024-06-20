@@ -10,7 +10,7 @@ class Solution:
         for i,num in enumerate(nums):
             if target-num in nums[i+1:]:
                return [i, nums[i+1:].index(target-num)+i+1]"""
-        #Using 330MB more of memory, but running 10x faster
+        #Using 330KB more of memory, but running 10x faster
         seen = {}
         for i, value in enumerate(nums):
            diff = target - nums[i]
